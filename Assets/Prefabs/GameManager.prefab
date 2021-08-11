@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &567421669052336558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 567421669052336559}
+  - component: {fileID: 567421669052336556}
+  - component: {fileID: 567421669052336557}
+  - component: {fileID: 234120765}
+  - component: {fileID: 6827717256350386082}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &567421669052336559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567421669052336558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &567421669052336556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567421669052336558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdedd81aa2e239043a2861bfaa179bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_escapeExitsApplication: 1
+--- !u!114 &567421669052336557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567421669052336558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8283ec7974ba3a4a80e4c7fd5b19f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_defaultPath: 3
+  m_defaultDataType: 1
+  m_defaultFileName: save
+--- !u!114 &234120765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567421669052336558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5fba59d5a171ac41b9af6e3e83dc8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_runSaveLoadTestOnStart: 0
+  m_initializeSaveFileIfNonexistent: 1
+  m_loadSaveFileOnStart: 1
+  m_saveDataName: SaveMe
+  m_saveData:
+    m_keyValuePairs:
+    - key: s_test
+      value: testing
+    - key: i_test
+      value: 2
+    - key: f_test
+      value: 2.73
+--- !u!114 &6827717256350386082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567421669052336558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d717b39da3e1d6c4db6dabdc731c4e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_saveDataBehaviour: {fileID: 234120765}
