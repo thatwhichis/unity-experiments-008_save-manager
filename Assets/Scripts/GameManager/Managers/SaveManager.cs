@@ -43,20 +43,11 @@ public class SaveManager : MonoBehaviour
     private static Dictionary<string, SaveData> m_stringSaveDataDictionary;
 
     #region Unity Lifecycle
-    private void Awake()
-    {
-        CheckInitialization();
-    }
+    private void Awake() => CheckInitialization();
 
-    void Start()
-    {
-        CheckInitialization();
-    }
+    void Start() => CheckInitialization();
 
-    void OnEnable()
-    {
-        CheckInitialization();
-    }
+    void OnEnable() => CheckInitialization();
 
     void OnDestroy()
     {
