@@ -49,15 +49,13 @@ public class SaveManager : MonoBehaviour
 
     void OnEnable() => CheckInitialization();
 
+    void OnValidate() => CheckInitialization();
+
     void OnDestroy()
     {
         // TODO
     }
 
-    void OnValidate()
-    {
-        CheckInitialization();
-    }
     #endregion
 
     #region Public Static Methods
